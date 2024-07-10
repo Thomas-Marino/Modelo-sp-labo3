@@ -1,9 +1,9 @@
 window.addEventListener("load", ():void => {
- 
     (<HTMLInputElement>document.getElementById("btnForm")).onclick = (e:any)=>{
-
+        
         e.preventDefault();
-
+        console.log("Cargue");
+        
         Main.Login();
     }
 
@@ -15,7 +15,7 @@ namespace Main{
 
         let legajo = (<HTMLInputElement>document.getElementById("legajo")).value;
         let apellido = (<HTMLInputElement>document.getElementById("apellido")).value;
-
+        console.log("En login");
         let dato:any = {};
         dato.legajo = legajo;
         dato.apellido = apellido;
@@ -46,7 +46,7 @@ namespace Main{
                 alerta = ArmarAlert(obj_ret.mensaje + " redirigiendo al principal.php...");
     
                 setTimeout(() => {
-                    location.assign(URL_BASE + "principal.html");
+                    location.assign("principal.html");
                 }, 2000);
             }
             else
