@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./img/utnLogo.png" rel="icon" type="image/png" />
+    <link href="../img/utnLogo.png" rel="icon" type="image/png" />
     <title>Login</title>
 
     <!-- bootstrap 4 CDN -->
@@ -14,11 +14,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
 
-    <link rel="stylesheet" type="text/css" href="./css/animacion.css">
+    <link rel="stylesheet" type="text/css" href="../css/animacion.css">
     <link rel="stylesheet" type="text/css" href="./css/estilo_login.css">
 
-    <script type="text/javascript" src="./js/funciones.js"></script>
-    <script type="text/javascript" src="js/script.js"></script>
+    <script type="text/javascript" src="../js/funciones.js"></script>
+    <script type="text/javascript" src="./js/script.js"></script>
 
 </head>
 <body>
@@ -37,7 +37,7 @@
 									<input type="text" name="apellido" id="apellido" placeholder="Ingrese apellido" />
 									<input type="text" name="legajo" id="legajo" placeholder="Ingrese legajo" />
 									
-									<input type="button" id="btnForm" class="btn btn-success MiBotonUTN" value="Enviar"/>
+									<input type="button" id="btnForm" class="btn btn-success MiBotonUTN" value="Enviar" onclick="Main.Login()"/>
                                     <input type="reset" id="" class="btn btn-danger MiBotonUTN" value="Limpiar"/>
                                     <br>
                                     <div id="div_mensaje" >
