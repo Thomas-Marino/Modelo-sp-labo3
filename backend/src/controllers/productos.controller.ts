@@ -102,14 +102,14 @@ export const ModificarProducto = (req: IRequest, res: IResponse) =>
             else
             {
                 borrarFoto(nuevoPath);
-                res.status(500).json({exito: false, mensaje: "No se pudo modificar el producto."});
+                res.status(500).json({exito: false, error: "No se pudo modificar el producto."});
             }
         });
         
     }
     catch (error)
     {
-        res.status(500).json({exito: false, mensaje: "Ocurrió un error."});
+        res.status(500).json({exito: false, error: "Ocurrió un error."});
     }
 }
 
@@ -150,19 +150,19 @@ export const EliminarProducto = (req: IRequest, res: IResponse) =>
                     }
                     else
                     {
-                        res.status(500).json({exito: false, mensaje: "No se pudo eliminar el producto de la db."});
+                        res.status(500).json({exito: false, error: "No se pudo eliminar el producto de la db."});
                     }
                 });
             }
             else
             {
-                res.status(500).json({exito: false, mensaje: "Error. Código incorrecto!"});
+                res.status(500).json({exito: false, error: "Código incorrecto!"});
             }
         });
     }
     catch (error)
     {
-        res.status(500).json({exito: false, mensaje: "Ocurrió un error."});
+        res.status(500).json({exito: false, error: "Ocurrió un error."});
     }
 };
 
